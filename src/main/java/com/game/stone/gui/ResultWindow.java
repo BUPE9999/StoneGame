@@ -60,16 +60,19 @@ public class ResultWindow extends Application {
 		gridPane.setAlignment(Pos.CENTER);
 		gridPane.setHgap(60);
 
+		// restart
 		Button newBtn = new Button("New Game");
+		gridPane.add(newBtn, 0, 0);
 		newBtn.setFont(Font.font(16));
 		newBtn.setUserData(0);
 		newBtn.setOnAction(e -> {
 			parent.resetStart();
 			primaryStage.close();
 		});
-		gridPane.add(newBtn, 0, 0);
 
+		// view ranking
 		Button rankBtn = new Button("View Ranking");
+		gridPane.add(rankBtn, 1, 0);
 		rankBtn.setFont(Font.font(16));
 		rankBtn.setUserData(0);
 		rankBtn.setOnAction(e -> {
@@ -80,15 +83,15 @@ public class ResultWindow extends Application {
 				e1.printStackTrace();
 			}
 		});
-		gridPane.add(rankBtn, 1, 0);
 
+		// exit game
 		Button exitBtn = new Button("Exit Game");
+		gridPane.add(exitBtn, 2, 0);
 		exitBtn.setFont(Font.font(16));
 		exitBtn.setUserData(0);
 		exitBtn.setOnAction(e -> {
 			System.exit(0);
 		});
-		gridPane.add(exitBtn, 2, 0);
 
 		BorderPane borderPane = new BorderPane();
 		borderPane.setPadding(new Insets(10, 10, 10, 20));

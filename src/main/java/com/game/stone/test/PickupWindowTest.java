@@ -1,4 +1,4 @@
-package com.game.stone.gui;
+package com.game.stone.test;
 
 import org.junit.jupiter.api.Test;
 

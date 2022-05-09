@@ -1,16 +1,12 @@
-package com.game.stone.gui;
+package com.game.stone.test;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class LoginWindowTest {
+class ResultWindowTest {
 
     @Test
     void start() {
-    }
-
-    @Test
-    void main() {
     }
 }

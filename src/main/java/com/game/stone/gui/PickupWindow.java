@@ -41,10 +41,17 @@ public class PickupWindow extends Application {
 		BackgroundImage backgroundImage = new BackgroundImage(image, BackgroundRepeat.REPEAT, BackgroundRepeat.REPEAT,
 				BackgroundPosition.CENTER, backgroundSize);
 
-		String text = String.format("Hi %s,Do you want to take some stones?", palyer);
+		// pick up title
+		String text = String.format("Hi %s,Please take some stones", palyer);
 		Label infoLabel = new Label(text);
 		infoLabel.setFont(Font.font(22));
 
+		GridPane gridPane = new GridPane();
+		gridPane.setPadding(new Insets(60, 10, 10, 10));
+		gridPane.setAlignment(Pos.CENTER);
+		gridPane.setHgap(20);
+
+		// click handle
 		EventHandler<ActionEvent> handler = new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
@@ -55,13 +62,11 @@ public class PickupWindow extends Application {
 			}
 		};
 
-		GridPane gridPane = new GridPane();
-		gridPane.setPadding(new Insets(60, 10, 10, 10));
-		gridPane.setAlignment(Pos.CENTER);
-		gridPane.setHgap(20);
-
+		// pick up number setting
 		int size = pane.getChildren().size();
 		int col = 0;
+
+		// i == 1 so that we can still tank stone when 1 stone remaining
 		for (int i = 1; i == 1 || i < size; i++) {
 			if (size % i == 0) {
 				Button btn = new Button("Block " + i);

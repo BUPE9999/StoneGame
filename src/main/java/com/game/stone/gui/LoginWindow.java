@@ -40,6 +40,13 @@ public class LoginWindow extends Application {
 		gridPane.setVgap(40);
 		gridPane.setHgap(10);
 
+		Scene scene = new Scene(gridPane, 600, 400);
+		primaryStage.setScene(scene);
+		primaryStage.setTitle("Login Game");
+		Image icon = new Image(getClass().getResourceAsStream("/logo.png"));
+		primaryStage.getIcons().add(icon);
+		primaryStage.show();
+
 		{
 			Label label = new Label("Player1：");
 			label.setFont(Font.font(20));
@@ -90,13 +97,6 @@ public class LoginWindow extends Application {
 			box.getChildren().addAll(startBtn, exitBtn);
 			gridPane.add(box, 1, 2, 2, 1);
 		}
-
-		Scene scene = new Scene(gridPane, 600, 400);
-		primaryStage.setScene(scene);
-		primaryStage.setTitle("Login Game");
-		Image icon = new Image(getClass().getResourceAsStream("/logo.png"));
-		primaryStage.getIcons().add(icon);
-		primaryStage.show();
 	}
 
 	public static void main(String[] args) {

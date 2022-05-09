@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <name>StoneGame</name>
 
-    <description>A Stone take-away game in javafx</description>
+    <description>Stone take-away game in javafx</description>
 
     <developers>
         <developer>

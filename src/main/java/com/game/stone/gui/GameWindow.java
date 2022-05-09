@@ -103,16 +103,16 @@ public class GameWindow extends Application {
 			leftScore.setFont(Font.font(25));
 			topPane.add(leftScore, 0, 2);
 
+			rightScore = new Label("Score2:" + score2);
+			rightScore.setFont(Font.font(25));
+			topPane.add(rightScore, 2, 2);
+
 			HBox hbox = new HBox();
 			hbox.setAlignment(Pos.CENTER);
 			timeLab = new Label("Time: 00:00");
 			timeLab.setFont(Font.font(25));
 			hbox.getChildren().add(timeLab);
 			topPane.add(hbox, 1, 2);
-
-			rightScore = new Label("Score2:" + score2);
-			rightScore.setFont(Font.font(25));
-			topPane.add(rightScore, 2, 2);
 		}
 
 		this.handler = new EventHandler<MouseEvent>() {

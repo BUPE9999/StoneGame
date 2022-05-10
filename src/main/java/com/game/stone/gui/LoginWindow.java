@@ -90,7 +90,7 @@ public class LoginWindow extends Application {
 				Logger.debug("Welcome "+player1);
 				Logger.debug("Welcome "+player2);
 				primaryStage.close();
-				Logger.info("Game Start");
+				Logger.debug("Game Start");
 			});
 			gridPane.add(startBtn, 0, 2);
 

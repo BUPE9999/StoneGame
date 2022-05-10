@@ -21,6 +21,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 public class PickupWindow extends Application {
 	private GameWindow parent;
@@ -59,6 +60,7 @@ public class PickupWindow extends Application {
 				count = (int) btn.getUserData();
 				primaryStage.close();
 				parent.updateCount(pane, count);
+				Logger.debug("have chosen: "+count+" stone(s)");
 			}
 		};
 
@@ -75,6 +77,7 @@ public class PickupWindow extends Application {
 				btn.setOnAction(handler);
 				gridPane.add(btn, col++, 0);
 			}
+
 		}
 
 		Button btn = new Button("Close");

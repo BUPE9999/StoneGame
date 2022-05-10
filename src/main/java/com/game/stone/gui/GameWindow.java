@@ -31,6 +31,7 @@ import javafx.scene.layout.VBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 import javafx.util.Duration;
+import org.tinylog.Logger;
 
 public class GameWindow extends Application {
 	private String player1;
@@ -123,6 +124,8 @@ public class GameWindow extends Application {
 				PickupWindow pickupWindow = new PickupWindow(GameWindow.this, subPane, player);
 				try {
 					pickupWindow.start(new Stage());
+					Logger.debug("stone taken");
+
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
@@ -240,6 +243,7 @@ public class GameWindow extends Application {
 				vo.setScore(score);
 				vo.setSecond(second);
 				DbUtil.addRecord(vo);
+				Logger.debug("result saved");
 
 				ResultWindow resultWindow = new ResultWindow(GameWindow.this, player, score, turns);
 				try {
@@ -263,6 +267,8 @@ public class GameWindow extends Application {
 		leftScore.setText("Score1:" + score1);
 		rightScore.setText("Score2:" + score2);
 		initStoneCells();
+		Logger.debug("restart");
+
 	}
 
 }

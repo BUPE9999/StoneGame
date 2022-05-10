@@ -22,6 +22,7 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 public class ResultWindow extends Application {
 	private GameWindow parent;
@@ -90,6 +91,7 @@ public class ResultWindow extends Application {
 		exitBtn.setFont(Font.font(16));
 		exitBtn.setUserData(0);
 		exitBtn.setOnAction(e -> {
+			Logger.debug("game exit");
 			System.exit(0);
 		});
 

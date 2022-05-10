@@ -20,6 +20,7 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 public class LoginWindow extends Application {
 	private TextField player1Text;
@@ -56,6 +57,8 @@ public class LoginWindow extends Application {
 			player1Text.setPromptText("Please enter your name");
 			player1Text.setFont(Font.font(20));
 			gridPane.add(player1Text, 1, 0);
+			Logger.debug("player1 joint");
+
 		}
 		{
 			Label label = new Label("Player2：");
@@ -66,6 +69,8 @@ public class LoginWindow extends Application {
 			player2Text.setPromptText("Please enter your name");
 			player2Text.setFont(Font.font(20));
 			gridPane.add(player2Text, 1, 1);
+			Logger.debug("player2 joint");
+
 		}
 
 		HBox box = new HBox();
@@ -85,6 +90,7 @@ public class LoginWindow extends Application {
 					e1.printStackTrace();
 				}
 				primaryStage.close();
+				Logger.info("game start");
 			});
 			gridPane.add(startBtn, 0, 2);
 

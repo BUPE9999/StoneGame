@@ -27,10 +27,13 @@ import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import org.tinylog.Logger;
 
 public class RankingWindow extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
+		Logger.debug("show ranking");
+
 		InputStream input = getClass().getResourceAsStream("/rank.png");
 		Image image = new Image(input);
 		BackgroundSize backgroundSize = new BackgroundSize(800, 500, true, true, true, true);
@@ -62,6 +65,7 @@ public class RankingWindow extends Application {
 		closeBtn.setFont(Font.font(16));
 		closeBtn.setOnAction(e -> {
 			primaryStage.close();
+			Logger.debug("ranking close");
 		});
 		hbox.getChildren().add(closeBtn);
 

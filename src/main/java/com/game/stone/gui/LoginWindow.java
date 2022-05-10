@@ -57,7 +57,6 @@ public class LoginWindow extends Application {
 			player1Text.setPromptText("Please enter your name");
 			player1Text.setFont(Font.font(20));
 			gridPane.add(player1Text, 1, 0);
-			Logger.debug("player1 joint");
 
 		}
 		{
@@ -69,7 +68,6 @@ public class LoginWindow extends Application {
 			player2Text.setPromptText("Please enter your name");
 			player2Text.setFont(Font.font(20));
 			gridPane.add(player2Text, 1, 1);
-			Logger.debug("player2 joint");
 
 		}
 
@@ -89,8 +87,10 @@ public class LoginWindow extends Application {
 				} catch (Exception e1) {
 					e1.printStackTrace();
 				}
+				Logger.debug("Welcome "+player1);
+				Logger.debug("Welcome "+player2);
 				primaryStage.close();
-				Logger.info("game start");
+				Logger.info("Game Start");
 			});
 			gridPane.add(startBtn, 0, 2);
 

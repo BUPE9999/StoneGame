@@ -124,7 +124,7 @@ public class GameWindow extends Application {
 				PickupWindow pickupWindow = new PickupWindow(GameWindow.this, subPane, player);
 				try {
 					pickupWindow.start(new Stage());
-					Logger.debug("stone taken");
+					Logger.debug("Stone taken");
 
 				} catch (Exception e1) {
 					e1.printStackTrace();
@@ -243,7 +243,7 @@ public class GameWindow extends Application {
 				vo.setScore(score);
 				vo.setSecond(second);
 				DbUtil.addRecord(vo);
-				Logger.debug("result saved");
+				Logger.debug("Result saved");
 
 				ResultWindow resultWindow = new ResultWindow(GameWindow.this, player, score, turns);
 				try {
@@ -267,7 +267,7 @@ public class GameWindow extends Application {
 		leftScore.setText("Score1:" + score1);
 		rightScore.setText("Score2:" + score2);
 		initStoneCells();
-		Logger.debug("restart");
+		Logger.debug("Restart");
 
 	}
 

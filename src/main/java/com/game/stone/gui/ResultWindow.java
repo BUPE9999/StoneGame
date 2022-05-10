@@ -91,7 +91,7 @@ public class ResultWindow extends Application {
 		exitBtn.setFont(Font.font(16));
 		exitBtn.setUserData(0);
 		exitBtn.setOnAction(e -> {
-			Logger.debug("game exit");
+			Logger.debug("Game exit");
 			System.exit(0);
 		});
 

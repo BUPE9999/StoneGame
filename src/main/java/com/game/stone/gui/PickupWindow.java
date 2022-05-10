@@ -60,7 +60,7 @@ public class PickupWindow extends Application {
 				count = (int) btn.getUserData();
 				primaryStage.close();
 				parent.updateCount(pane, count);
-				Logger.debug("have chosen: "+count+" stone(s)");
+				Logger.debug("Have chosen: "+count+" stone(s)");
 			}
 		};
 

@@ -32,7 +32,7 @@ import org.tinylog.Logger;
 public class RankingWindow extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
-		Logger.debug("show ranking");
+		Logger.debug("Show ranking");
 
 		InputStream input = getClass().getResourceAsStream("/rank.png");
 		Image image = new Image(input);
@@ -65,7 +65,7 @@ public class RankingWindow extends Application {
 		closeBtn.setFont(Font.font(16));
 		closeBtn.setOnAction(e -> {
 			primaryStage.close();
-			Logger.debug("ranking close");
+			Logger.debug("Ranking close");
 		});
 		hbox.getChildren().add(closeBtn);
 

@@ -1,13 +1,9 @@
-D:\code\StoneGame\src\main\java\com\game\stone\test\LoginWindowTest.java
-D:\code\StoneGame\src\main\java\com\game\stone\gui\LoginWindow.java
-D:\code\StoneGame\src\main\java\com\game\stone\util\DbUtil.java
-D:\code\StoneGame\src\main\java\module-info.java
-D:\code\StoneGame\src\main\java\com\game\stone\gui\PickupWindow.java
-D:\code\StoneGame\src\main\java\com\game\stone\test\PickupWindowTest.java
-D:\code\StoneGame\src\main\java\com\game\stone\test\RankingWindowTest.java
 D:\code\StoneGame\src\main\java\com\game\stone\gui\RankingWindow.java
+D:\code\StoneGame\src\main\java\com\game\stone\gui\LoginWindow.java
 D:\code\StoneGame\src\main\java\com\game\stone\gui\ResultWindow.java
 D:\code\StoneGame\src\main\java\com\game\stone\model\Record.java
+D:\code\StoneGame\src\main\java\com\game\stone\util\DbUtil.java
+D:\code\StoneGame\src\main\java\module-info.java
 D:\code\StoneGame\src\main\java\com\game\stone\gui\GameWindow.java
-D:\code\StoneGame\src\main\java\com\game\stone\test\ResultWindowTest.java
+D:\code\StoneGame\src\main\java\com\game\stone\gui\PickupWindow.java
 D:\code\StoneGame\src\main\java\com\game\stone\test\GameWindowTest.java

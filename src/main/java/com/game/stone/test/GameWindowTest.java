@@ -1,18 +1,20 @@
 package com.game.stone.test;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class GameWindowTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void start() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void updateCount() {
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void resetStart() {
     }
 }

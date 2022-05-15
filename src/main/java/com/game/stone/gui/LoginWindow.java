@@ -97,6 +97,7 @@ public class LoginWindow extends Application {
 			Button exitBtn = new Button("  Exit  ");
 			exitBtn.setFont(Font.font(20));
 			exitBtn.setOnAction(e -> {
+				Logger.debug("Game exit");
 				System.exit(0);
 			});
 

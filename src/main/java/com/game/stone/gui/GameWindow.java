@@ -185,6 +185,12 @@ public class GameWindow extends Application {
 		primaryStage.show();
 	}
 
+
+	/**
+	 * Returns nothing
+	 * init every stone cell by picture
+	 * @return nothing
+	 */
 	private void initStoneCells() {
 		Set<Integer> set = new HashSet<>();
 		for (GridPane pane : paneMap.values()) {
@@ -205,6 +211,12 @@ public class GameWindow extends Application {
 		}
 	}
 
+	/**
+	 * Returns nothing
+	 * @param pane is the base pane to display
+	 * @param count is the number of turing and score
+	 * @return nothing
+	 */
 	public void updateCount(Pane pane, int count) {
 		if (count > 0) {
 			if (first) {

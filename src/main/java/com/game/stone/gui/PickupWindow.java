@@ -35,6 +35,12 @@ public class PickupWindow extends Application {
 		this.palyer = palyer;
 	}
 
+	/**
+	 * Returns nothing
+	 * method used pick up stones, and there will be information to show how many stones we can pick
+	 * @param primaryStage is the base stage to do pick up operation
+	 * @return nothing
+	 */
 	public void start(Stage primaryStage) throws Exception {
 		InputStream input = getClass().getResourceAsStream("/pickup.png");
 		Image image = new Image(input);

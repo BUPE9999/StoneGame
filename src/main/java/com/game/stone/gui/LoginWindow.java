@@ -25,6 +25,7 @@ import org.tinylog.Logger;
 public class LoginWindow extends Application {
 	private TextField player1Text;
 	private TextField player2Text;
+	private boolean isGameStarted;
 
 	public void start(Stage primaryStage) throws Exception {
 		GridPane gridPane = new GridPane();
@@ -104,6 +105,13 @@ public class LoginWindow extends Application {
 			box.getChildren().addAll(startBtn, exitBtn);
 			gridPane.add(box, 1, 2, 2, 1);
 		}
+	}
+
+	public boolean isGameStarted(){
+		return isGameStarted;
+	}
+
+	public void setGameStarted(boolean b) {
 	}
 
 	public static void main(String[] args) {

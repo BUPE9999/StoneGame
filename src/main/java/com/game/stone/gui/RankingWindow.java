@@ -48,7 +48,8 @@ public class RankingWindow extends Application {
 		for (Record vo : DbUtil.getTopRanking(5)) {
 			i++;
 			list.add(String.format("  %d\t%-10s\t%4d\t\t%02d:%02d\t%s %s", i, vo.getPlayer(), vo.getScore(),
-					vo.getSecond() / 60, vo.getSecond() % 60, vo.getDate().substring(2), vo.getTime().substring(0, 5)));
+					vo.getSecond() / 60, vo.getSecond() % 60, vo.getDate().substring(2),
+					vo.getTime().substring(0, 5)));
 		}
 		for (String str : list) {
 			Text text = new Text(str);

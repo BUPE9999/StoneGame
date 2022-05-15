@@ -50,6 +50,8 @@ public class GameWindow extends Application {
 	private boolean first = true;
 	private Timeline timeline = new Timeline();
 	private EventHandler<MouseEvent> handler;
+
+	private boolean gameIsSolved;
 	private Map<Integer, GridPane> paneMap = new HashMap<>(5);
 
 	public GameWindow(String player1, String player2) {
@@ -255,7 +257,6 @@ public class GameWindow extends Application {
 				vo.setScore(score);
 				vo.setSecond(second);
 				DbUtil.addRecord(vo);
-				Logger.debug("Result saved");
 
 				ResultWindow resultWindow = new ResultWindow(GameWindow.this, player, score, turns);
 				try {
@@ -283,4 +284,10 @@ public class GameWindow extends Application {
 
 	}
 
+	public boolean isGameSolved(){
+		return gameIsSolved;
+	}
+
+	public void setGameIsSolved(boolean b) {
+	}
 }

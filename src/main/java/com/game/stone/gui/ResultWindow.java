@@ -29,6 +29,7 @@ public class ResultWindow extends Application {
 	private String palyer;
 	private int score;
 	private int turns;
+	private boolean isGameRestarted;
 
 	public ResultWindow(GameWindow parent, String palyer, int score, int turns) {
 		this.parent = parent;
@@ -38,6 +39,7 @@ public class ResultWindow extends Application {
 	}
 
 	public void start(Stage primaryStage) throws Exception {
+
 		InputStream input = getClass().getResourceAsStream("/result.png");
 		Image image = new Image(input);
 		BackgroundSize backgroundSize = new BackgroundSize(600, 500, true, true, true, true);
@@ -111,6 +113,12 @@ public class ResultWindow extends Application {
 			parent.resetStart();
 		});
 		primaryStage.show();
+	}
+	public boolean isGameRestarted(){
+		return isGameRestarted;
+	}
+
+	public void setisGameRestarted(boolean b) {
 	}
 
 }

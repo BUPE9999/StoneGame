@@ -53,7 +53,7 @@ public class RankingWindow extends Application {
 		}
 		for (String str : list) {
 			Text text = new Text(str);
-			text.setFill(Color.BLUE);
+			text.setFill(Color.DARKBLUE);
 			text.setFont(Font.font("Dialog", 32));
 			text.setEffect(new Glow(1.0));
 			vbox.getChildren().add(text);

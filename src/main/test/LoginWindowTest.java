@@ -1,5 +1,3 @@
-package com.game.stone.test;
-
 import com.game.stone.gui.LoginWindow;
 import org.junit.jupiter.api.Test;
 

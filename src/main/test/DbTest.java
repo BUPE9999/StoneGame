@@ -1,5 +1,3 @@
-package com.game.stone.test;
-
 import java.util.List;
 
 import static org.junit.Assert.*;

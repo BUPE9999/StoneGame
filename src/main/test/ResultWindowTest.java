@@ -1,5 +1,3 @@
-package com.game.stone.test;
-
 import com.game.stone.gui.ResultWindow;
 import org.junit.jupiter.api.Test;
 
